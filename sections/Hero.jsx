@@ -50,28 +50,7 @@ const Hero = () => (
           </div>
         </a>
       </motion.div>
-      <motion.div
-      variants={slideIn("up","tween",0.3,1.1)}
-      className='justify-center items-center mt-[-50px border-r border-l border-l-zinc-600 border-r-zinc-600 mx-auto  w-[1100px]
-      h-[500px]'>
-        <div className='flex justify-between mx-11 w-full  only:'>
-          <div>
-            <motion.h1
-            variants={textVariant(1.3)}
-            className="text-[80px] w-[50%] font-bold text-slate-400 drop-shadow-2xl">
-              Unlock the pontential of Metaverses
-            </motion.h1>
-            <motion.p className='w-[50%] text-zinc-500'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam hic voluptatum eum corrupti Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum temporibus nemo ipsum, non, perferendis aut reiciendis labore amet eligendi veritatis deserunt obcaecati est voluptate laudantium incidunt porro nihil fugiat quibusdam.
-            </motion.p>
-          </div>
-          <div className='right-6 top-12 rounded-lg absolute w-[35%] h-[80%] border border-zinc-400 z-10'>
-          <div className='inset-0 gradient-01 absolute z-0'/>
-
-            <img src="/donut.png" alt="donut" className='absolute right-8 w-[900px] h-[400px]' />
-          </div>
-        </div>
-      </motion.div>
+      
     </motion.div>
   </section>
 );

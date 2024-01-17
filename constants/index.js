@@ -1,7 +1,7 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.png',
+    imgUrl: '/planet-09.png',
     title: 'The Hogwarts',
   },
   {

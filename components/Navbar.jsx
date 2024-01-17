@@ -14,16 +14,16 @@ const Navbar = () => (
     <div className={`${styles.innerWidth} justify-between flex gap-8 mx-auto`}>
       <img src="/search.svg"
       alt="search"
-      className='w-[24px] h-[24px] object-contain'
+      className='w-[24px] cursor-pointer h-[24px] object-contain'
       />
       <h2 
       className='font-extrabold
       text-[24px]
       leading-[30px]
-      text-white'>
+      text-white cursor-pointer'>
         METAVERSES
       </h2>
-      <img src="/menu.svg" alt="menu" className='w-[24px] h-[24] object-contain'/>
+      <img src="/menu.svg" alt="menu" className='w-[24px] cursor-pointer h-[24] object-contain'/>
     </div>
   </motion.nav>
 );
