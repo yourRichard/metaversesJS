@@ -8,23 +8,48 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 const Car = () => {
     
     const car = useGLTF("/car/scene.gltf");
+
     return(
         <mesh>
-        <hemisphereLight intensity={0.15} groundColor='white' />
+        <hemisphereLight intensity={13} groundColor='white' />
         <spotLight
-          position={[-20, 50, 10]}
-          intensity={1}
-          castShadow
-          angle={0.12}
-          penumbra={1}
-          shadow-mapSize={1024}
-        />
-        <pointLight intensity={0.5} />
+        position={[30, 90, -10]}
+        intensity={80}
+        castShadow
+        angle={0.12}
+        penumbra={1}
+        shadow-mapSize={1024}
+      />
+        <spotLight
+        position={[50, 100, -30]}
+        intensity={80}
+        castShadow
+        angle={0.12}
+        penumbra={1}
+        shadow-mapSize={1024}
+      />
+        <spotLight
+        position={[50, 100, -40]}
+        intensity={80}
+        castShadow
+        angle={0.12}
+        penumbra={1}
+        shadow-mapSize={1024}
+      />
+        <spotLight
+        position={[50, 100, -60]}
+        intensity={180}
+        castShadow
+        angle={0.12}
+        penumbra={1}
+        shadow-mapSize={1024}
+      />
+        <pointLight intensity={10}  />
         <primitive
           object={car.scene}
-          scale={1}
-          position={[0, -3.25, -1.5]}
-          rotation={[-0.01,-0.2,-0.001]}
+          scale={3}
+          position={[0, -1.25, -1.5]}
+          rotation={[0.07,-0.2,-0.001]}
         />
       </mesh>
     )
